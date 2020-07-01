@@ -49,13 +49,13 @@ $(function(){var url=window.location.href;url=url.split("=");url=parseInt(url[1]
     	<h1><a href="./index.php"><span>Simple Email</span></a></h1>
         
         <!-- You can name the links with lowercase, they will be transformed to uppercase by CSS, we prefered to name them with uppercase to have the same effect with disabled stylesheet -->
-        <p style="float:right;color:#9b9b9b;"><?php echo $_SESSION['email'];?></p>
+        <p style="float:right;color:#9b9b9b;"><a href="./information.php"><?php echo $_SESSION['email'];?></a></p>
         <div style="clear:both;"></div>
         <ul id="mainNav">
         	<li><a href="./index.php" >信箱</a></li> <!-- Use the "active" class for the active menu item  -->
+        	<li><a href="./delete.php">已删除</a></li>
         	<li><a href="./message_send.php">发送信息</a></li>
         	<li><a href="./messager.php" class="active">联系人列表</a></li>
-        	<li><a href="./three_plat.php">第三方平台发送</a></li>
         	<li class="logout"><a href="./logout.php">退出登录</a></li>
         </ul>
         <!-- // #end mainNav -->
